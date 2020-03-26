@@ -2,6 +2,7 @@ FROM openjdk:8-jdk
 
 RUN apt-get update && apt-get install maven -y
 
+
 RUN mkdir /app
 
 WORKDIR ./app
