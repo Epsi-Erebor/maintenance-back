@@ -101,9 +101,7 @@
 					<generateGitPropertiesFilename>${project.build.outputDirectory}/git.properties</generateGitPropertiesFilename >
 					<format>json</format>
 					<gitDescribe>
-					<skip>false</skip>
-						<always>false</always>
-						<dirty>-dirty</dirty>
+						<skip>true</skip>
 					</gitDescribe>
 					<injectAllReactorProjects>true</injectAllReactorProjects>
 				</configuration>
