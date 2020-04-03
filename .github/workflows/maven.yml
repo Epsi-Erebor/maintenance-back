@@ -20,5 +20,7 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
+    - name: Set Git Url
+      run : git remote set-url origin https://github.com/Epsi-Erebor/maintenance-back.git
     - name: Build with Maven
       run: mvn -B package --file pom.xml
