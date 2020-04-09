@@ -25,7 +25,7 @@ jobs:
     - name: Build with Maven
       run: mvn package --file pom.xml -Dmaven.test.skip=true
     - name : SonarCloudAnalysis  
-      uses: sonarsource/sonarcloud-github-action@master
+      uses: org.sonarsource.scanner.maven:sonar
       env:
         SONAR_TOKEN: Epsi-Erebor_maintenance-back
     - name : UploadArtifact  
