@@ -24,10 +24,6 @@ jobs:
       run : git remote set-url origin https://github.com/Epsi-Erebor/maintenance-back.git
     - name: Build with Maven
       run: mvn package --file pom.xml -Dmaven.test.skip=true
-    - name : SonarCloudAnalysis  
-      uses: org.sonarsource.scanner.maven:sonar
-      env:
-        SONAR_TOKEN: Epsi-Erebor_maintenance-back
     - name : UploadArtifact  
       uses: actions/upload-artifact@v1
       with:
